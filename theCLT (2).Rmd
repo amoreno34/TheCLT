@@ -16,10 +16,13 @@ data("imagpop")
 KK_data <- imagpop$kkardashtemp
 my1000 <- sample(KK_data, size = 1000, replace=T)
 densityplot(my1000,main="original data")
-
+print(mean(KK_data))
+print(sd(KK_data))
 ```
 
 Describe the resulting plot -  is it unimodal?  How many peaks does it have?  Are all the peaks the same size? 
+
+Not unimodal because there are multiple peaks. 
 
 Now take 2 random samples of 1000 points of the kkardashtemp variable and form 1000 points of their averages,
 
@@ -29,19 +32,75 @@ Kdata   <- sample(KK_data, size = numb*1000, replace=T)
 mdata  <-matrix(Kdata,nrow=1000,ncol=numb)
 x.avg <- apply(mdata,1,mean)
 densityplot(x.avg,main="sample size 2")
+print(mean(x.avg))
+print(sd(x.avg))
 ```
+
 
 Describe the resulting plot -  is it unimodal?  How many peaks does it have?  Are all the peaks the same size? 
 
- 
+It is not unimodal becuase there are multiple peaks
 
 Do this again for 4 random samples
 
+```{r}
+numb = 2
+Kdata   <- sample(KK_data, size = numb*1000, replace=T)
+mdata  <-matrix(Kdata,nrow=1000,ncol=numb)
+x.avg <- apply(mdata,1,mean)
+x.std <- apply(mdata,1, sd)
+
+KKmean = mean(x.avg)
+KKstd = sd(x.std)
+
+densityplot(x.avg,main="sample size 4")
+```
+
 Then again for 9 random samples
+
+```{r}
+numb = 2
+Kdata   <- sample(KK_data, size = numb*1000, replace=T)
+mdata  <-matrix(Kdata,nrow=1000,ncol=numb)
+x.avg <- apply(mdata,1,mean)
+x.std <- apply(mdata,1, sd)
+
+KKmean = mean(x.avg)
+KKstd = sd(x.std)
+
+densityplot(x.avg,main="sample size 9")
+```
 
 then 16 random samples
 
+```{r}
+numb = 2
+Kdata   <- sample(KK_data, size = numb*1000, replace=T)
+mdata  <-matrix(Kdata,nrow=1000,ncol=numb)
+x.avg <- apply(mdata,1,mean)
+x.std <- apply(mdata,1, sd)
+
+KKmean = mean(x.avg)
+KKstd = sd(x.std)
+
+densityplot(x.avg,main="sample size 16")
+```
+
 finally for 36 random samples.
+
+```{r}
+numb = 2
+Kdata   <- sample(KK_data, size = numb*1000, replace=T)
+mdata  <-matrix(Kdata,nrow=1000,ncol=numb)
+x.avg <- apply(mdata,1,mean)
+x.std <- apply(mdata,1, sd)
+
+KKmean = mean(x.avg)
+KKstd = sd(x.std)
+
+densityplot(x.avg,main="sample size 36")
+```
+
 
 Write a summary paragraph describing what you observed and how it relates to the central limit theorem.
 
