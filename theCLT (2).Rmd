@@ -120,10 +120,15 @@ print(sd(x.avg))
 densityplot(x.avg,main="sample size 36")
 ```
 
-Bimodal graph. The mean is 50.58. Standard deviation is 6.864. Almost all the samples are insidee the center of the graph curve.
+Bimodal graph. The mean is 50.54. Standard deviation is 7.15. Almost all the samples are inside the center of the graph curve.
 
 
 Write a summary paragraph describing what you observed and how it relates to the central limit theorem.
+
+
+
+
+
 
 Be sure to comment on both the mean and standard deviation of the sample averages - the CLT makes a statement about what to expect from both.
 
