@@ -125,7 +125,7 @@ Bimodal graph. The mean is 50.54. Standard deviation is 7.15. Almost all the sam
 
 Write a summary paragraph describing what you observed and how it relates to the central limit theorem.
 
-
+From analyzing each graph, the sample sizes alternate the amounts shown. Each sample has a diffrent mean that stays around 50 and the standard deviation is the square root of the variance between the samples given. Each sample has a different standard deviation to show that alternating thee sample size causes a change or more accurate result.
 
 
 
