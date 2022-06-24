@@ -80,6 +80,8 @@ print(sd(x.avg))
 densityplot(x.avg,main="sample size 9")
 ```
 
+Not a unimodal graph. The top peaks are scattered close together. Mean is 51.07 while the standard deviation is 13.31.
+
 then 16 random samples
 
 ```{r}
