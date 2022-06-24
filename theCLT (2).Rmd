@@ -80,7 +80,7 @@ print(sd(x.avg))
 densityplot(x.avg,main="sample size 9")
 ```
 
-Not a unimodal graph. The top peaks are scattered close together. Mean is 51.07 while the standard deviation is 13.31.
+Not a unimodal graph. The top peaks are scattered close together. Mean is 49.81 while the standard deviation is 13.94.
 
 then 16 random samples
 
@@ -99,6 +99,8 @@ print(sd(x.avg))
 
 densityplot(x.avg,main="sample size 16")
 ```
+
+Bimodal graph not unimodal. No size comparison in this graph. Mean is 50.32 while the standard deviation is 10.52. 
 
 finally for 36 random samples.
 
