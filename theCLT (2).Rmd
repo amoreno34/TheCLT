@@ -60,7 +60,7 @@ print(sd(x.avg))
 densityplot(x.avg,main="sample size 4")
 ```
 
-Trimodal graph. Highest is the middle one. 
+Trimodal graph. Highest is the middle one. Mean is 50.29 while the standard deviation is 29.13. Each curve has a chunk of the results under them from looking at the graph.
 
 Then again for 9 random samples
 
